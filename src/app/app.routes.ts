@@ -1,12 +1,27 @@
 import { Routes } from '@angular/router';
-import { QuizJoinComponent } from './pages/quiz-join/quiz-join.component';
-import { QuizInfoComponent } from './pages/quiz-info/quiz-info.component';
+import { AccueilComponent } from './accueil/accueil.component';
+import { ProposComponent } from './pages/propos/propos.component';
 import { QuizComponent } from './pages/quiz/quiz.component';
+import { QuizInfoComponent } from './pages/quiz-info/quiz-info.component';
+import { QuizJoinComponent } from './pages/quiz-join/quiz-join.component';
 import { QuizScoreComponent } from './pages/quiz-score/quiz-score.component';
+import { NavbarComponent } from './pages/navbar/navbar.component';
 
 export const routes: Routes = [
   {
-    path: "",
+    path: "accueil",
+    component:AccueilComponent
+  },
+  {
+    path: "propos",
+    component:ProposComponent
+  },
+  {
+    path: "navbar",
+    component:NavbarComponent
+  },
+  {
+    path: "quiz-join",
     component:QuizJoinComponent
   },
   {
